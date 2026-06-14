@@ -13,8 +13,29 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; backg
 /* ── HERO ── */
 .hero { background:linear-gradient(135deg,#7b2ff7 0%,#f107a3 100%); padding:48px 20px 32px; text-align:center; }
 .hero-badge { display:inline-block; background:rgba(255,255,255,.2); border-radius:20px; padding:5px 16px; font-size:12px; font-weight:700; color:#fff; letter-spacing:.8px; margin-bottom:14px; }
-.hero h1 { font-size:34px; font-weight:900; color:#fff; letter-spacing:-1px; line-height:1.1; }
-.hero p { margin-top:8px; font-size:14px; color:rgba(255,255,255,.8); line-height:1.5; }
+.hero h1 { font-size:30px; font-weight:900; color:#fff; letter-spacing:-1px; line-height:1.15; }
+.hero p { margin-top:8px; font-size:14px; color:rgba(255,255,255,.85); line-height:1.6; }
+.trust-row { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:16px; }
+.trust-chip { background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); border-radius:20px; padding:5px 12px; font-size:11px; font-weight:700; color:#fff; }
+/* ── PAIN BOX ── */
+.pain-box { background:rgba(241,7,163,.08); border:1px solid rgba(241,7,163,.25); border-radius:14px; padding:16px; margin-bottom:12px; }
+.pain-box h3 { font-size:15px; font-weight:800; color:#ff7be5; margin-bottom:8px; }
+.pain-box ul { list-style:none; }
+.pain-box ul li { font-size:13px; color:#ccc; padding:3px 0 3px 18px; position:relative; line-height:1.5; }
+.pain-box ul li::before { content:"✗"; position:absolute; left:0; color:#f87171; font-weight:700; }
+/* ── SOLUTION BOX ── */
+.solution-box { background:rgba(34,197,94,.07); border:1px solid rgba(34,197,94,.2); border-radius:14px; padding:16px; margin-bottom:16px; }
+.solution-box h3 { font-size:15px; font-weight:800; color:#4ade80; margin-bottom:8px; }
+.solution-box ul { list-style:none; }
+.solution-box ul li { font-size:13px; color:#ccc; padding:3px 0 3px 18px; position:relative; line-height:1.5; }
+.solution-box ul li::before { content:"✓"; position:absolute; left:0; color:#4ade80; font-weight:700; }
+/* ── URGENCY ── */
+.urgency { background:rgba(251,146,60,.08); border:1px solid rgba(251,146,60,.25); border-radius:12px; padding:13px 16px; margin-bottom:12px; font-size:13px; color:#fb923c; font-weight:600; text-align:center; }
+/* ── SOCIAL PROOF ── */
+.proof-row { display:flex; gap:8px; margin-bottom:12px; }
+.proof-chip { flex:1; background:#1a1a1a; border:1px solid #242424; border-radius:12px; padding:12px; text-align:center; }
+.proof-num { font-size:20px; font-weight:900; color:#fff; }
+.proof-label { font-size:10px; color:#666; margin-top:2px; }
 
 /* ── STICKY NAV TABS ── */
 .tabs { position:sticky; top:0; z-index:100; background:#111; border-bottom:1px solid #222; display:flex; overflow-x:auto; scrollbar-width:none; }
@@ -109,9 +130,15 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; backg
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-badge">💪 FREE SUPPLEMENT GUIDE</div>
-  <h1>Fit & Fueled</h1>
-  <p>Complete guide for men & women — supplements, muscle building, nutrition timing & detox. All top Amazon picks.</p>
+  <div class="hero-badge">⚡ THE ONLY GUIDE YOU NEED — 100% FREE</div>
+  <h1>Why Aren't You Seeing Results Yet?</h1>
+  <p>Most people train hard and eat right — but still can't figure out <strong>what to take, when to take it, and why nothing is working.</strong><br><br>This guide fixes that. For men. For women. For real.</p>
+  <div class="trust-row">
+    <span class="trust-chip">✅ Science-Backed</span>
+    <span class="trust-chip">✅ Amazon Best Sellers Only</span>
+    <span class="trust-chip">✅ Men & Women</span>
+    <span class="trust-chip">✅ Detox + Muscle + Nutrition</span>
+  </div>
 </div>
 
 <!-- STICKY TABS -->
@@ -128,6 +155,29 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; backg
 
 <!-- ════════════════════════════════════ WOMEN ════════════════════════════════════ -->
 <div class="section" id="women">
+  <div class="pain-box">
+    <h3>Sound familiar?</h3>
+    <ul>
+      <li>You work out consistently but your body isn't changing</li>
+      <li>You feel exhausted before your workout even starts</li>
+      <li>You've tried supplements that did absolutely nothing</li>
+      <li>You don't know what to eat or when to eat it</li>
+    </ul>
+  </div>
+  <div class="solution-box">
+    <h3>Here's what actually works for women:</h3>
+    <ul>
+      <li>The right pre-workout gives you real energy without the crash or jitters</li>
+      <li>Protein + creatine after training = visible muscle tone in weeks, not months</li>
+      <li>Cycle-aware training makes your body work WITH your hormones, not against them</li>
+      <li>A 3-day detox reset flushes bloat and restarts your metabolism</li>
+    </ul>
+  </div>
+  <div class="proof-row">
+    <div class="proof-chip"><div class="proof-num">33K+</div><div class="proof-label">AminoLean Reviews</div></div>
+    <div class="proof-chip"><div class="proof-num">56K+</div><div class="proof-label">Probiotic Reviews</div></div>
+    <div class="proof-chip"><div class="proof-num">4.4★</div><div class="proof-label">Avg Rating</div></div>
+  </div>
   <div class="section-header">
     <h2>👩 Women's Guide</h2>
     <p>Top-rated supplements for women — fat loss, muscle tone, energy & recovery</p>
@@ -266,6 +316,29 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; backg
 
 <!-- ════════════════════════════════════ MEN ════════════════════════════════════ -->
 <div class="section" id="men">
+  <div class="pain-box">
+    <h3>If you're a guy and this sounds like you:</h3>
+    <ul>
+      <li>You've been lifting for months and your gains have stalled</li>
+      <li>Your energy crashes mid-workout before you even finish</li>
+      <li>You're spending money on supplements that aren't doing anything</li>
+      <li>You don't know if you should be bulking, cutting, or both</li>
+    </ul>
+  </div>
+  <div class="solution-box">
+    <h3>The fix is simpler than you think:</h3>
+    <ul>
+      <li>Creatine monohydrate is the most proven supplement in sports science — take it daily</li>
+      <li>Protein timing matters more than total amount — hit 25–40g within 30 min post-workout</li>
+      <li>Protect your testosterone with zinc, magnesium, and vitamin D — most men are deficient in all 3</li>
+      <li>The right pre-workout makes the difference between a mediocre session and a PR</li>
+    </ul>
+  </div>
+  <div class="proof-row">
+    <div class="proof-chip"><div class="proof-num">100K+</div><div class="proof-label">ON Whey Reviews</div></div>
+    <div class="proof-chip"><div class="proof-num">#1</div><div class="proof-label">Fat Burner 3 Yrs</div></div>
+    <div class="proof-chip"><div class="proof-num">4.3★</div><div class="proof-label">Avg Rating</div></div>
+  </div>
   <div class="section-header">
     <h2>💪 Men's Guide</h2>
     <p>Build muscle, burn fat, protect testosterone — top-rated Amazon picks for men</p>
@@ -364,6 +437,7 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; backg
 
 <!-- ════════════════════════════════════ WORKOUT SCHEDULE ════════════════════════════════════ -->
 <div class="section" id="schedule">
+  <div class="urgency">🔥 People who follow a structured split build 2–3x more muscle than those who go to the gym without a plan.</div>
   <div class="section-header">
     <h2>📅 7-Day Muscle Building Schedule</h2>
     <p>The exact split to build muscle fast — with supplement timing for each day</p>
@@ -601,6 +675,24 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; backg
 
 <!-- ════════════════════════════════════ DETOX ════════════════════════════════════ -->
 <div class="section" id="detox">
+  <div class="pain-box">
+    <h3>Feel bloated, sluggish, or stuck?</h3>
+    <ul>
+      <li>Bloating that won't go away no matter what you eat</li>
+      <li>Low energy even after a full night of sleep</li>
+      <li>Cravings you can't control sabotaging your diet</li>
+      <li>Your body holding onto weight no matter how hard you train</li>
+    </ul>
+  </div>
+  <div class="solution-box">
+    <h3>72 hours is all you need to reset:</h3>
+    <ul>
+      <li>Cut processed sugar, alcohol, and junk food for just 3 days</li>
+      <li>Detox tea in the morning flushes inflammation and supports your liver</li>
+      <li>Probiotics at night rebuild your gut and eliminate bloat</li>
+      <li>You'll feel lighter, sharper, and more motivated by Day 3 — guaranteed</li>
+    </ul>
+  </div>
   <div class="section-header">
     <h2>🌿 3-Day Detox Reset</h2>
     <p>No starving. No misery. Real results in 72 hours.</p>
