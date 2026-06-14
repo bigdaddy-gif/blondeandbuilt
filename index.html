@@ -184,6 +184,57 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 /* AGE SECTIONS */
 .age-section{display:none}
 .age-section.visible{display:block}
+
+/* CALC */
+.calc-box{background:#111;border:1px solid #1a1a1a;border-radius:18px;padding:20px;margin-bottom:14px}
+.calc-label{font-size:11px;font-weight:700;color:#555;letter-spacing:.5px;margin-bottom:7px;display:block;text-transform:uppercase}
+.calc-input{width:100%;background:#0c0c0c;border:1px solid #222;border-radius:10px;padding:12px 14px;color:#fff;font-size:15px;font-weight:700;-webkit-appearance:none;appearance:none;margin-bottom:12px;box-sizing:border-box}
+.calc-input:focus{outline:none;border-color:#7b2ff7}
+.calc-select{width:100%;background:#0c0c0c;border:1px solid #222;border-radius:10px;padding:12px 14px;color:#fff;font-size:14px;font-weight:600;-webkit-appearance:none;appearance:none;margin-bottom:12px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23666' d='M6 8L0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;box-sizing:border-box}
+.calc-select:focus{outline:none;border-color:#7b2ff7}
+.tgl-row{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.tgl{flex:1;background:#0c0c0c;border:1px solid #222;border-radius:10px;padding:11px 8px;color:#555;font-size:12px;font-weight:800;cursor:pointer;text-align:center;transition:all .2s;letter-spacing:.3px;min-width:calc(50% - 4px)}
+.tgl.on{background:linear-gradient(135deg,#7b2ff7,#f107a3);border-color:transparent;color:#fff}
+.calc-go{width:100%;background:linear-gradient(135deg,#7b2ff7,#f107a3);border:none;border-radius:14px;padding:17px;color:#fff;font-size:15px;font-weight:900;cursor:pointer;letter-spacing:.5px;margin-top:6px;box-shadow:0 4px 20px rgba(123,47,247,.3)}
+.calc-go:active{transform:scale(.98)}
+.h-row{display:flex;gap:8px}
+.h-row .calc-input{flex:1}
+/* RESULTS */
+.res{display:none}
+.res.on{display:block;animation:fadeup .4s ease both}
+@keyframes fadeup{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.res-hero{background:linear-gradient(135deg,#0f001a,#1a0050);border:1px solid rgba(123,47,247,.25);border-radius:18px;padding:22px;margin-bottom:10px;text-align:center}
+.res-lbl{font-size:10px;font-weight:800;color:#7b2ff7;letter-spacing:1.5px;margin-bottom:6px}
+.res-cal{font-size:52px;font-weight:900;color:#fff;line-height:1;letter-spacing:-2px}
+.res-gl{font-size:13px;color:#666;margin-top:4px;margin-bottom:18px}
+.mac-row{display:flex;gap:6px}
+.mac{flex:1;background:rgba(255,255,255,.05);border-radius:12px;padding:12px 6px;text-align:center}
+.mac .mn{font-size:22px;font-weight:900;color:#fff;line-height:1}
+.mac .ms{font-size:9px;font-weight:700;letter-spacing:.5px;margin-top:3px;color:#555}
+.mac .mc{font-size:10px;font-weight:700;margin-top:1px}
+.res-tip{background:rgba(123,47,247,.07);border:1px solid rgba(123,47,247,.15);border-radius:12px;padding:13px 15px;font-size:12px;color:#888;line-height:1.7;margin-top:10px;text-align:left}
+.res-tip strong{color:#b57bff}
+/* AGE DIET */
+.adiet{background:#0d0d0d;border:1px solid #1a1a1a;border-radius:14px;padding:16px;margin:14px 0 6px}
+.adiet-ttl{font-size:10px;font-weight:800;color:#7b2ff7;letter-spacing:1.2px;margin-bottom:10px}
+.adiet-bar{background:#151515;border-radius:20px;padding:10px 14px;font-size:12px;color:#666;display:flex;justify-content:space-between;margin-bottom:8px}
+.adiet-bar strong{color:#fff;font-size:13px}
+.food-chips{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}
+.fc{font-size:11px;background:#151515;border:1px solid #1e1e1e;color:#999;padding:5px 10px;border-radius:20px}
+.adiet-note{font-size:11px;color:#444;line-height:1.6;margin-top:8px}
+/* MEAL PLAN */
+.meal-card{background:#111;border:1px solid #1a1a1a;border-radius:14px;padding:14px;margin-bottom:8px}
+.meal-hdr{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.meal-pill{font-size:9px;font-weight:800;letter-spacing:.5px;padding:4px 10px;border-radius:20px;flex-shrink:0}
+.meal-nm{font-size:14px;font-weight:800;color:#fff}
+.meal-kcal{font-size:11px;color:#444}
+.meal-foods{font-size:12px;color:#888;line-height:1.8}
+.meal-foods strong{color:#ddd}
+.meal-foods a{color:#b57bff;text-decoration:none;font-weight:700}
+.meal-supp{font-size:11px;color:#555;margin-top:8px;border-top:1px solid #1a1a1a;padding-top:8px}
+.meal-supp a{color:#b57bff;text-decoration:none;font-weight:700}
+.plan-meta{background:rgba(123,47,247,.07);border:1px solid rgba(123,47,247,.15);border-radius:12px;padding:13px;margin-bottom:12px;font-size:12px;color:#b57bff;line-height:1.6;text-align:center}
+.plan-meta strong{color:#fff;font-size:14px;display:block;margin-bottom:4px}
 </style>
 </head>
 <body>
@@ -230,6 +281,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   <a class="tab" href="#schedule">🏋️ Workout</a>
   <a class="tab" href="#timing">⏰ Timing</a>
   <a class="tab" href="#detox">🌿 Detox</a>
+  <a class="tab" href="#goals">🔢 Calories</a>
+  <a class="tab" href="#meals">🍽️ Meals</a>
 </div>
 
 <div class="container">
@@ -455,6 +508,20 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   <a class="card" href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank"><img class="card-img" src="https://images-na.ssl-images-amazon.com/images/P/B000QSNYGI.jpg" alt="ON Gold Standard" loading="lazy"><div class="card-body"><div class="card-title">ON Gold Standard Whey 5lb</div><div class="card-sub">100K+ reviews · #1 choice for young lifters</div><div class="card-stars">⭐⭐⭐⭐⭐</div></div><span class="card-buy">Shop →</span></a>
   <a class="card" href="https://www.amazon.com/dp/B002DYIZEO/?tag=contractionca-20" target="_blank"><img class="card-img" src="https://images-na.ssl-images-amazon.com/images/P/B002DYIZEO.jpg" alt="Creatine" loading="lazy"><div class="card-body"><div class="card-title">ON Micronized Creatine</div><div class="card-sub">Start creatine in your 20s — game changer</div><div class="card-stars">⭐⭐⭐⭐⭐</div></div><span class="card-buy">Shop →</span></a>
   <a class="card" href="https://www.amazon.com/dp/B01BXLYEQ0/?tag=contractionca-20" target="_blank"><img class="card-img" src="https://images-na.ssl-images-amazon.com/images/P/B01BXLYEQ0.jpg" alt="Burn-XT" loading="lazy"><div class="card-body"><div class="card-title">Burn-XT Fat Burner</div><div class="card-sub">Stack with pre-workout to maximize burn</div><div class="card-stars">⭐⭐⭐⭐⭐</div></div><span class="card-buy">Shop →</span></a>
+
+  <div class="adiet">
+    <div class="adiet-ttl">🍽️ WHAT TO EAT IN YOUR 20s</div>
+    <div class="adiet-bar"><span>Daily Calories</span><strong>2,000–3,200 cal</strong></div>
+    <div class="food-chips">
+      <span class="fc">🍗 Chicken breast</span><span class="fc">🥚 Eggs (4–6/day)</span>
+      <span class="fc">🌾 Oats &amp; brown rice</span><span class="fc">🥛 Greek yogurt</span>
+      <span class="fc">🍠 Sweet potato</span><span class="fc">🥦 Broccoli &amp; spinach</span>
+      <span class="fc">🍌 Bananas &amp; fruit</span><span class="fc">🥜 Peanut butter</span>
+    </div>
+    <div class="adiet-bar"><span>Daily Protein Target</span><strong>150–200g</strong></div>
+    <div class="adiet-note">Peak metabolism decade — carbs are your ally. Fuel hard sessions with rice, oats, and fruit. Hit protein every day and your body responds fast at this age.</div>
+  </div>
+  <a class="btn btn-outline" href="#goals" style="padding:12px;font-size:13px;margin:4px 0 10px">🔢 Calculate My Exact Daily Calories →</a>
   </div>
 
   <!-- AGE 30-39 -->
@@ -473,6 +540,20 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   <a class="card" href="https://www.amazon.com/dp/B00CAZAU62/?tag=contractionca-20" target="_blank"><img class="card-img" src="https://images-na.ssl-images-amazon.com/images/P/B00CAZAU62.jpg" alt="Fish Oil" loading="lazy"><div class="card-body"><div class="card-title">Dr. Tobias Omega 3 Fish Oil</div><div class="card-sub">Heart + brain + joints — start in 30s</div><div class="card-stars">⭐⭐⭐⭐⭐</div></div><span class="card-buy">Shop →</span></a>
   <a class="card" href="https://www.amazon.com/dp/B002DYIZEO/?tag=contractionca-20" target="_blank"><img class="card-img" src="https://images-na.ssl-images-amazon.com/images/P/B002DYIZEO.jpg" alt="Creatine" loading="lazy"><div class="card-body"><div class="card-title">ON Micronized Creatine</div><div class="card-sub">Non-negotiable in 30s — fight muscle loss</div><div class="card-stars">⭐⭐⭐⭐⭐</div></div><span class="card-buy">Shop →</span></a>
   <a class="card" href="https://www.amazon.com/s?k=coq10+supplement+best+seller&tag=contractionca-20" target="_blank"><div class="card-body"><div class="card-title">CoQ10 (100mg) — Shop Amazon</div><div class="card-sub">Heart health + energy production · Critical at 30+</div><div class="card-stars">⭐⭐⭐⭐⭐ Top heart supplement</div></div><span class="card-buy">Shop →</span></a>
+
+  <div class="adiet">
+    <div class="adiet-ttl">🍽️ WHAT TO EAT IN YOUR 30s</div>
+    <div class="adiet-bar"><span>Daily Calories</span><strong>1,800–2,800 cal</strong></div>
+    <div class="food-chips">
+      <span class="fc">🐟 Salmon (3×/week)</span><span class="fc">🥑 Avocado daily</span>
+      <span class="fc">🍠 Sweet potato</span><span class="fc">🫐 Berries daily</span>
+      <span class="fc">🥚 Eggs every morning</span><span class="fc">🥬 Kale &amp; spinach</span>
+      <span class="fc">🌰 Walnuts &amp; almonds</span><span class="fc">🫙 Greek yogurt</span>
+    </div>
+    <div class="adiet-bar"><span>Daily Protein Target</span><strong>140–180g</strong></div>
+    <div class="adiet-note">Metabolism slows ~2% this decade. Anti-inflammatory foods fight cortisol and slow fat gain. Watch alcohol and sugar closely — they hit harder in your 30s.</div>
+  </div>
+  <a class="btn btn-outline" href="#goals" style="padding:12px;font-size:13px;margin:4px 0 10px">🔢 Calculate My Exact Daily Calories →</a>
   </div>
 
   <!-- AGE 40-49 -->
@@ -494,6 +575,20 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   <a class="card" href="https://www.amazon.com/dp/B00CAZAU62/?tag=contractionca-20" target="_blank"><img class="card-img" src="https://images-na.ssl-images-amazon.com/images/P/B00CAZAU62.jpg" alt="Fish Oil" loading="lazy"><div class="card-body"><div class="card-title">Dr. Tobias Omega 3 Triple Strength</div><div class="card-sub">Heart + joint protection for 40s · ~$30</div><div class="card-stars">⭐⭐⭐⭐⭐</div></div><span class="card-buy">Shop →</span></a>
   <a class="card" href="https://www.amazon.com/s?k=glucosamine+chondroitin+joint+pain+best+seller&tag=contractionca-20" target="_blank"><div class="card-body"><div class="card-title">Glucosamine + Chondroitin — Shop Amazon</div><div class="card-sub">Joint pain relief · Non-negotiable at 40+</div><div class="card-stars">⭐⭐⭐⭐⭐ Top joint supplement</div></div><span class="card-buy">Shop →</span></a>
   <a class="card" href="https://www.amazon.com/s?k=coq10+200mg+best+seller&tag=contractionca-20" target="_blank"><div class="card-body"><div class="card-title">CoQ10 200mg — Shop Amazon</div><div class="card-sub">Heart health + energy at 40 · Doctor recommended</div><div class="card-stars">⭐⭐⭐⭐⭐</div></div><span class="card-buy">Shop →</span></a>
+
+  <div class="adiet">
+    <div class="adiet-ttl">🍽️ WHAT TO EAT IN YOUR 40s</div>
+    <div class="adiet-bar"><span>Daily Calories</span><strong>1,600–2,600 cal</strong></div>
+    <div class="food-chips">
+      <span class="fc">🐟 Wild salmon &amp; sardines</span><span class="fc">🫒 Olive oil daily</span>
+      <span class="fc">🌰 Walnuts &amp; Brazil nuts</span><span class="fc">🫐 Blueberries daily</span>
+      <span class="fc">🥚 Whole eggs daily</span><span class="fc">🥬 Dark leafy greens</span>
+      <span class="fc">🥦 Broccoli &amp; cauliflower</span><span class="fc">🫙 Cottage cheese</span>
+    </div>
+    <div class="adiet-bar"><span>Daily Protein Target</span><strong>130–170g</strong></div>
+    <div class="adiet-note">Anti-inflammatory eating is your #1 tool now. Cut processed carbs and seed oils. Healthy fats support hormone production. Protein at every meal prevents muscle loss.</div>
+  </div>
+  <a class="btn btn-outline" href="#goals" style="padding:12px;font-size:13px;margin:4px 0 10px">🔢 Calculate My Exact Daily Calories →</a>
   </div>
 
   <!-- AGE 50-59 -->
@@ -513,6 +608,20 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   <a class="card" href="https://www.amazon.com/dp/B00CAZAU62/?tag=contractionca-20" target="_blank"><img class="card-img" src="https://images-na.ssl-images-amazon.com/images/P/B00CAZAU62.jpg" alt="Fish Oil" loading="lazy"><div class="card-body"><div class="card-title">Dr. Tobias Omega 3 Triple Strength</div><div class="card-sub">Heart protection at 50 · #8 in Fish Oil category</div><div class="card-stars">⭐⭐⭐⭐⭐</div></div><span class="card-buy">Shop →</span></a>
   <a class="card" href="https://www.amazon.com/s?k=lion%27s+mane+mushroom+memory+best+seller&tag=contractionca-20" target="_blank"><div class="card-body"><div class="card-title">Lion's Mane Mushroom — Shop Amazon</div><div class="card-sub">Memory + brain health · Trending at 50+</div><div class="card-stars">⭐⭐⭐⭐⭐ Top brain supplement</div></div><span class="card-buy">Shop →</span></a>
   <a class="card" href="https://www.amazon.com/dp/B0DSJYJ2G2/?tag=contractionca-20" target="_blank"><img class="card-img" src="https://images-na.ssl-images-amazon.com/images/P/B0DSJYJ2G2.jpg" alt="Liver Cleanse" loading="lazy"><div class="card-body"><div class="card-title">Liver Cleanse 27-in-1</div><div class="card-sub">Liver health critical at 50+ · Full detox formula</div><div class="card-stars">⭐⭐⭐⭐⭐</div></div><span class="card-buy">Shop →</span></a>
+
+  <div class="adiet">
+    <div class="adiet-ttl">🍽️ WHAT TO EAT IN YOUR 50s</div>
+    <div class="adiet-bar"><span>Daily Calories</span><strong>1,500–2,400 cal</strong></div>
+    <div class="food-chips">
+      <span class="fc">🐟 Fatty fish (omega-3s)</span><span class="fc">🍳 Eggs every morning</span>
+      <span class="fc">🫙 Cottage cheese</span><span class="fc">🥬 Spinach &amp; kale</span>
+      <span class="fc">🫘 Lentils &amp; beans</span><span class="fc">🌾 Oats (fiber + heart)</span>
+      <span class="fc">🥜 Almonds &amp; walnuts</span><span class="fc">🫐 Blueberries daily</span>
+    </div>
+    <div class="adiet-bar"><span>Daily Protein Target</span><strong>120–160g</strong></div>
+    <div class="adiet-note">High protein fights sarcopenia (muscle loss that starts at 50). Calcium-rich foods protect bones. Fiber manages cholesterol. Eat smaller, more frequent meals — digestion slows this decade.</div>
+  </div>
+  <a class="btn btn-outline" href="#goals" style="padding:12px;font-size:13px;margin:4px 0 10px">🔢 Calculate My Exact Daily Calories →</a>
   </div>
 
   <!-- AGE 60-70 -->
@@ -531,6 +640,20 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   <a class="card" href="https://www.amazon.com/s?k=coq10+ubiquinol+200mg+seniors&tag=contractionca-20" target="_blank"><div class="card-body"><div class="card-title">Ubiquinol CoQ10 200mg — Shop Amazon</div><div class="card-sub">Better absorbed form for 60+ · Heart energy</div><div class="card-stars">⭐⭐⭐⭐⭐</div></div><span class="card-buy">Shop →</span></a>
   <a class="card" href="https://www.amazon.com/s?k=lion%27s+mane+memory+brain+supplement+senior&tag=contractionca-20" target="_blank"><div class="card-body"><div class="card-title">Lion's Mane + Brain Health — Shop Amazon</div><div class="card-sub">Memory · Focus · Mental clarity at 60+</div><div class="card-stars">⭐⭐⭐⭐⭐</div></div><span class="card-buy">Shop →</span></a>
   <a class="card" href="https://www.amazon.com/dp/B002DYIZEO/?tag=contractionca-20" target="_blank"><img class="card-img" src="https://images-na.ssl-images-amazon.com/images/P/B002DYIZEO.jpg" alt="Creatine" loading="lazy"><div class="card-body"><div class="card-title">Creatine Monohydrate</div><div class="card-sub">Preserves muscle mass at 60+ — most overlooked supplement for seniors</div><div class="card-stars">⭐⭐⭐⭐⭐</div></div><span class="card-buy">Shop →</span></a>
+
+  <div class="adiet">
+    <div class="adiet-ttl">🍽️ WHAT TO EAT IN YOUR 60s &amp; 70s</div>
+    <div class="adiet-bar"><span>Daily Calories</span><strong>1,400–2,200 cal</strong></div>
+    <div class="food-chips">
+      <span class="fc">🍳 Eggs (protein every meal)</span><span class="fc">🐟 Fish 4×/week</span>
+      <span class="fc">🫘 Lentils &amp; beans</span><span class="fc">🫐 Berries (antioxidants)</span>
+      <span class="fc">🥬 Dark greens daily</span><span class="fc">🌰 Nuts &amp; seeds</span>
+      <span class="fc">🌾 Oats &amp; whole grains</span><span class="fc">🫙 Yogurt (calcium)</span>
+    </div>
+    <div class="adiet-bar"><span>Daily Protein Target</span><strong>100–140g</strong></div>
+    <div class="adiet-note">Protein at EVERY meal is critical — sarcopenia (muscle loss) is the biggest risk. Hydrate aggressively, thirst sense weakens with age. Prioritize nutrient density over calorie volume.</div>
+  </div>
+  <a class="btn btn-outline" href="#goals" style="padding:12px;font-size:13px;margin:4px 0 10px">🔢 Calculate My Exact Daily Calories →</a>
   </div>
 
   <div class="call info">👆 <strong>Tap your age group at the top</strong> to see your complete personalized stack.</div>
@@ -651,6 +774,129 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   <a class="btn btn-outline" href="https://www.amazon.com/s?k=detox+cleanse+supplements+best+seller&tag=contractionca-20" target="_blank">🌿 Shop All Detox Products</a>
 </div>
 
+<div class="div"></div>
+
+<!-- ═══════════ CALORIE CALCULATOR ═══════════ -->
+<div class="section" id="goals">
+  <div class="sec-head sh-purple">
+    <div class="age-tag">🔢 CALORIE CALCULATOR</div>
+    <h2>Your Exact Daily Calorie Target</h2>
+    <p>Tell us your goal — get your precise calories, protein, carbs, and fat. Takes 30 seconds.</p>
+  </div>
+
+  <div class="calc-box">
+    <label class="calc-label">I am a...</label>
+    <div class="tgl-row" id="gender-row">
+      <div class="tgl on" onclick="setTgl('gender','M',this)">♂ Male</div>
+      <div class="tgl" onclick="setTgl('gender','F',this)">♀ Female</div>
+    </div>
+
+    <label class="calc-label">Age</label>
+    <input class="calc-input" type="number" id="c-age" placeholder="e.g. 32" min="16" max="90" inputmode="numeric">
+
+    <label class="calc-label">Weight (lbs)</label>
+    <input class="calc-input" type="number" id="c-weight" placeholder="e.g. 165" inputmode="numeric">
+
+    <label class="calc-label">Height</label>
+    <div class="h-row">
+      <input class="calc-input" type="number" id="c-ft" placeholder="ft" min="4" max="7" inputmode="numeric" style="flex:1">
+      <input class="calc-input" type="number" id="c-in" placeholder="in" min="0" max="11" inputmode="numeric" style="flex:1">
+    </div>
+
+    <label class="calc-label">Activity Level</label>
+    <select class="calc-select" id="c-activity">
+      <option value="1.2">Sedentary — desk job, little exercise</option>
+      <option value="1.375" selected>Lightly Active — exercise 1–3 days/week</option>
+      <option value="1.55">Moderately Active — exercise 3–5 days/week</option>
+      <option value="1.725">Very Active — hard training 6–7 days/week</option>
+      <option value="1.9">Extra Active — physical job + daily training</option>
+    </select>
+
+    <label class="calc-label">My Goal</label>
+    <div class="tgl-row" id="goal-row">
+      <div class="tgl" onclick="setTgl('goal','lose',this)">🔥 Lose Fat</div>
+      <div class="tgl on" onclick="setTgl('goal','maintain',this)">⚖️ Maintain</div>
+      <div class="tgl" onclick="setTgl('goal','muscle',this)">💪 Build Muscle</div>
+      <div class="tgl" onclick="setTgl('goal','bulk',this)">📈 Bulk Up</div>
+    </div>
+
+    <button class="calc-go" onclick="runCalc()">Calculate My Plan →</button>
+  </div>
+
+  <div class="res" id="calc-res">
+    <div class="res-hero">
+      <div class="res-lbl">YOUR DAILY TARGET</div>
+      <div class="res-cal" id="r-cal">—</div>
+      <div class="res-gl" id="r-gl">calories per day</div>
+      <div class="mac-row">
+        <div class="mac"><div class="mn" id="r-p">—</div><div class="ms">PROTEIN</div><div class="mc" style="color:#f87171" id="r-pg">g/day</div></div>
+        <div class="mac"><div class="mn" id="r-c">—</div><div class="ms">CARBS</div><div class="mc" style="color:#facc15" id="r-cg">g/day</div></div>
+        <div class="mac"><div class="mn" id="r-f">—</div><div class="ms">FAT</div><div class="mc" style="color:#60a5fa" id="r-fg">g/day</div></div>
+        <div class="mac"><div class="mn">5</div><div class="ms">MEALS</div><div class="mc" style="color:#4ade80">per day</div></div>
+      </div>
+      <div class="res-tip" id="r-tip"></div>
+    </div>
+    <div class="call succ" id="r-cta" style="display:none"></div>
+    <a class="btn btn-main" href="#meals" onclick="setTimeout(buildMeals,200)">🍽️ See My Daily Meal Plan →</a>
+  </div>
+
+  <div class="call info">💡 <strong>Tip:</strong> Fill in the calculator above, then scroll to Meal Plan for exactly what to eat today — with Amazon links for the protein and supplements you need.</div>
+</div>
+
+<div class="div"></div>
+
+<!-- ═══════════ MEAL PLAN ═══════════ -->
+<div class="section" id="meals">
+  <div class="sec-head sh-teal">
+    <div class="age-tag">🍽️ DAILY MEAL PLAN</div>
+    <h2>What to Eat Every Single Day</h2>
+    <p>Run the calorie calculator above — your plan updates automatically to match your goal.</p>
+  </div>
+
+  <div class="plan-meta">
+    <strong id="plan-title">Complete the calculator above to personalize this plan</strong>
+    <span id="plan-sub">Default shown: ~2,000 cal · Lean muscle · Moderately active</span>
+  </div>
+
+  <div id="meal-wrap">
+    <div class="meal-card">
+      <div class="meal-hdr"><span class="meal-pill" style="background:rgba(250,204,21,.15);color:#facc15">☀️ BREAKFAST</span><div><div class="meal-nm">Power Breakfast</div><div class="meal-kcal">~440 cal · 40g protein</div></div></div>
+      <div class="meal-foods"><strong>3 whole eggs + 2 egg whites</strong> scrambled with spinach<br><strong>1 cup oats</strong> with banana + honey<br><strong>Coffee or green tea</strong> (no sugar)</div>
+      <div class="meal-supp">Multivitamin + Fish oil + Creatine (5g) with breakfast</div>
+    </div>
+    <div class="meal-card">
+      <div class="meal-hdr"><span class="meal-pill" style="background:rgba(34,197,94,.15);color:#4ade80">🥤 MID-MORNING</span><div><div class="meal-nm">Protein Snack</div><div class="meal-kcal">~240 cal · 25g protein</div></div></div>
+      <div class="meal-foods"><strong>1 scoop <a href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank">whey protein</a></strong> in water or almond milk<br><strong>1 apple</strong> + 1 tbsp almond butter</div>
+      <div class="meal-supp">Aim for 16oz water by mid-morning — hydration kills fake hunger</div>
+    </div>
+    <div class="meal-card">
+      <div class="meal-hdr"><span class="meal-pill" style="background:rgba(59,130,246,.15);color:#60a5fa">🍱 LUNCH</span><div><div class="meal-nm">Performance Lunch</div><div class="meal-kcal">~550 cal · 45g protein</div></div></div>
+      <div class="meal-foods"><strong>6oz grilled chicken or canned tuna</strong><br><strong>1 cup brown rice or sweet potato</strong><br><strong>Big salad</strong>: spinach, tomato, cucumber, olive oil + vinegar<br><strong>1 cup broccoli</strong></div>
+      <div class="meal-supp">Take pre-workout 45 min before afternoon training</div>
+    </div>
+    <div class="meal-card">
+      <div class="meal-hdr"><span class="meal-pill" style="background:rgba(241,7,163,.15);color:#ff7be5">⚡ PRE-WORKOUT</span><div><div class="meal-nm">Training Fuel</div><div class="meal-kcal">~200 cal · 10g protein</div></div></div>
+      <div class="meal-foods"><strong>1 banana + rice cakes</strong> (fast carbs = instant energy)<br><strong>Or:</strong> small bowl of oats<br>Sip <a href="https://www.amazon.com/dp/B07SH31T9V/?tag=contractionca-20" target="_blank"><strong>LMNT electrolytes</strong></a> throughout your workout</div>
+      <div class="meal-supp">Take pre-workout supplement 30–45 min before your session</div>
+    </div>
+    <div class="meal-card">
+      <div class="meal-hdr"><span class="meal-pill" style="background:rgba(251,146,60,.15);color:#fb923c">🔥 POST-WORKOUT</span><div><div class="meal-nm">Anabolic Window — Critical</div><div class="meal-kcal">~320 cal · 35g protein</div></div></div>
+      <div class="meal-foods"><strong>1 scoop <a href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank">whey protein</a></strong> immediately after<br><strong>Banana or white rice</strong> — fast carbs accelerate muscle recovery<br>This 30-minute window is your most important nutrition moment</div>
+      <div class="meal-supp">Creatine (5g) here if not taken at breakfast</div>
+    </div>
+    <div class="meal-card">
+      <div class="meal-hdr"><span class="meal-pill" style="background:rgba(20,184,166,.15);color:#2dd4bf">🌙 DINNER</span><div><div class="meal-nm">Recovery Dinner</div><div class="meal-kcal">~550 cal · 45g protein</div></div></div>
+      <div class="meal-foods"><strong>6oz salmon, lean beef or chicken</strong><br><strong>1 cup quinoa or roasted sweet potato</strong><br><strong>Broccoli + asparagus</strong> — steamed or roasted<br>Drizzle of olive oil + lemon</div>
+      <div class="meal-supp">Magnesium glycinate (200–400mg) + <a href="https://www.amazon.com/dp/B07B8BSGPL/?tag=contractionca-20" target="_blank">probiotics</a> before bed for deep sleep &amp; gut health</div>
+    </div>
+  </div>
+
+  <div class="call warn">💧 <strong>Hydration formula:</strong> Your body weight in lbs ÷ 2 = oz of water daily. 180lb person = 90oz (about 11 cups). Dehydration stalls fat loss and tanks performance.</div>
+
+  <div class="div"></div>
+  <a class="btn btn-main" href="https://www.amazon.com/s?k=protein+powder+meal+prep+supplements&tag=contractionca-20" target="_blank">🛒 Shop Protein &amp; Meal Prep on Amazon →</a>
+</div>
+
 </div><!-- end container -->
 
 <!-- LEGAL PAGES -->
@@ -668,9 +914,136 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </div>
 
 <script>
+
+// ── TOGGLE BUTTONS ──
+const tglState = {gender:'M', goal:'maintain'};
+function setTgl(key, val, el) {
+  tglState[key] = val;
+  el.parentElement.querySelectorAll('.tgl').forEach(b => b.classList.remove('on'));
+  el.classList.add('on');
+}
+
+// ── CALORIE CALCULATOR (Mifflin-St Jeor) ──
+function runCalc() {
+  const age    = parseInt(document.getElementById('c-age').value);
+  const wlbs   = parseFloat(document.getElementById('c-weight').value);
+  const ft     = parseInt(document.getElementById('c-ft').value) || 0;
+  const ins    = parseInt(document.getElementById('c-in').value) || 0;
+  const act    = parseFloat(document.getElementById('c-activity').value);
+  const gender = tglState.gender;
+  const goal   = tglState.goal;
+  if (!age || !wlbs || !ft) { alert('Fill in age, weight, and height first.'); return; }
+  const wkg  = wlbs * 0.453592;
+  const hcm  = (ft * 12 + ins) * 2.54;
+  const bmr  = gender === 'M'
+    ? 10 * wkg + 6.25 * hcm - 5 * age + 5
+    : 10 * wkg + 6.25 * hcm - 5 * age - 161;
+  const tdee = Math.round(bmr * act);
+  const adj  = {lose:-500, maintain:0, muscle:300, bulk:700};
+  const cal  = tdee + adj[goal];
+  const pmul = {lose:1.2, maintain:0.85, muscle:1.1, bulk:1.0};
+  const prot = Math.round(wlbs * pmul[goal]);
+  const fat  = Math.round(cal * 0.28 / 9);
+  const carb = Math.max(50, Math.round((cal - prot*4 - fat*9) / 4));
+  const labels = {lose:'🔥 Fat Loss — 500 cal deficit', maintain:'⚖️ Maintenance', muscle:'💪 Lean Muscle — 300 cal surplus', bulk:'📈 Aggressive Bulk — 700 cal surplus'};
+  const tips = {
+    lose:`Target: <strong>500 calorie daily deficit</strong> = ~1 lb fat loss per week. Hit <strong>${prot}g protein</strong> every single day to keep your muscle while cutting. <a href="https://www.amazon.com/dp/B01BXLYEQ0/?tag=contractionca-20" target="_blank">Burn-XT fat burner →</a>`,
+    maintain:`At maintenance you can still recomp — lose fat + gain muscle simultaneously. Hit <strong>${prot}g protein</strong> daily and take <a href="https://www.amazon.com/dp/B002DYIZEO/?tag=contractionca-20" target="_blank">creatine</a> every day.`,
+    muscle:`Clean 300-cal surplus = lean muscle with minimal fat. <strong>Hit ${prot}g protein</strong> and don't skip creatine — most proven muscle builder. <a href="https://www.amazon.com/dp/B002DYIZEO/?tag=contractionca-20" target="_blank">Shop creatine →</a>`,
+    bulk:`700 cal surplus = fast mass gains (0.5–1 lb/week). Hitting <strong>${prot}g protein</strong> from food alone is tough — <a href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank">protein shakes</a> are non-negotiable here.`
+  };
+  document.getElementById('r-cal').textContent = cal.toLocaleString();
+  document.getElementById('r-gl').textContent = labels[goal];
+  document.getElementById('r-p').textContent = prot;
+  document.getElementById('r-c').textContent = carb;
+  document.getElementById('r-f').textContent = fat;
+  document.getElementById('r-tip').innerHTML = tips[goal];
+  const cta = document.getElementById('r-cta');
+  cta.style.display = 'block';
+  cta.innerHTML = `✅ Done! You need <strong>${cal.toLocaleString()} calories/day</strong>. Scroll down to see your meal plan.`;
+  document.getElementById('calc-res').classList.add('on');
+  window._plan = {cal, prot, carb, fat, goal, gender};
+  // auto-fill age picker
+  const ageN = age < 30 ? 'age21' : age < 40 ? 'age30' : age < 50 ? 'age40' : age < 60 ? 'age50' : 'age60';
+  const ageBtn = document.querySelector(\`.age-btn[href="#\${ageN}"]\`);
+  if (ageBtn) showAge(ageN, ageBtn);
+}
+
+// ── MEAL PLAN BUILDER ──
+function buildMeals() {
+  if (!window._plan) return;
+  const {cal, prot, carb, fat, goal} = window._plan;
+  const gn = {lose:'Fat Loss', maintain:'Maintenance', muscle:'Lean Muscle', bulk:'Bulk'};
+  document.getElementById('plan-title').textContent = `Your ${gn[goal]} Plan — ${cal.toLocaleString()} Cal/Day`;
+  document.getElementById('plan-sub').textContent = `${prot}g protein · ${carb}g carbs · ${fat}g fat`;
+  const meals = getMeals(goal, cal, prot);
+  document.getElementById('meal-wrap').innerHTML = meals.map(m => `
+    <div class="meal-card">
+      <div class="meal-hdr"><span class="meal-pill" style="background:${m.bg};color:${m.clr}">${m.time}</span>
+        <div><div class="meal-nm">${m.name}</div><div class="meal-kcal">~${m.kcal} cal · ${m.p}g protein</div></div>
+      </div>
+      <div class="meal-foods">${m.foods}</div>
+      ${m.supp ? `<div class="meal-supp">💊 ${m.supp}</div>` : ''}
+    </div>`).join('');
+}
+
+function getMeals(goal, cal, prot) {
+  if (goal === 'lose') return [
+    {time:'☀️ BREAKFAST',bg:'rgba(250,204,21,.15)',clr:'#facc15',name:'High-Protein Start',kcal:Math.round(cal*.22),p:Math.round(prot*.28),
+     foods:`<strong>3 egg whites + 1 whole egg</strong> scrambled with spinach<br><strong>½ cup oats</strong> with cinnamon + blueberries<br><strong>Black coffee or green tea</strong> — no sugar`,
+     supp:`Multivitamin + Fish oil + <a href="https://www.amazon.com/dp/B01BXLYEQ0/?tag=contractionca-20" target="_blank">Burn-XT fat burner</a>`},
+    {time:'🥤 SNACK',bg:'rgba(34,197,94,.15)',clr:'#4ade80',name:'Lean Protein Hit',kcal:Math.round(cal*.12),p:Math.round(prot*.18),
+     foods:`<strong>1 scoop <a href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank">whey protein</a></strong> in water<br><strong>Apple + celery</strong> — fills you up, almost zero calories`,
+     supp:'Drink 16oz water with this — kills hunger for 2 hours'},
+    {time:'🍱 LUNCH',bg:'rgba(59,130,246,.15)',clr:'#60a5fa',name:'Lean & Clean',kcal:Math.round(cal*.27),p:Math.round(prot*.28),
+     foods:`<strong>6oz grilled chicken or tuna in water</strong><br><strong>Big salad</strong>: romaine, cucumber, tomato, red onion<br><strong>Olive oil + vinegar dressing</strong> only<br><strong>½ cup rice or sweet potato</strong>`,
+     supp:'Pre-workout 45 min before afternoon training session'},
+    {time:'⚡ PRE-WORKOUT',bg:'rgba(241,7,163,.15)',clr:'#ff7be5',name:'Training Fuel',kcal:Math.round(cal*.10),p:Math.round(prot*.07),
+     foods:`<strong>Rice cake + almond butter</strong><br>Or <strong>plain Greek yogurt</strong> (no added fruit on a cut)<br><a href="https://www.amazon.com/dp/B07SH31T9V/?tag=contractionca-20" target="_blank"><strong>LMNT electrolytes</strong></a> during workout`,
+     supp:'Take pre-workout supplement 30 min before your session'},
+    {time:'🌙 DINNER',bg:'rgba(20,184,166,.15)',clr:'#2dd4bf',name:'Evening Recovery',kcal:Math.round(cal*.29),p:Math.round(prot*.32),
+     foods:`<strong>6oz salmon, chicken or lean beef</strong><br><strong>Broccoli, zucchini &amp; asparagus</strong> — unlimited<br><strong>½ cup rice</strong> or skip starch depending on deficit<br>Olive oil + lemon`,
+     supp:`Magnesium glycinate before bed for deep recovery sleep`}
+  ];
+  if (goal === 'bulk') return [
+    {time:'☀️ BREAKFAST',bg:'rgba(250,204,21,.15)',clr:'#facc15',name:'Mass Builder Breakfast',kcal:Math.round(cal*.22),p:Math.round(prot*.22),
+     foods:`<strong>4 whole eggs</strong> scrambled<br><strong>1.5 cups oats</strong> with whole milk + banana + honey<br><strong>2 slices whole-grain toast</strong> + peanut butter`,
+     supp:`Creatine (5g) + Multivitamin + Fish oil`},
+    {time:'🥤 SNACK',bg:'rgba(34,197,94,.15)',clr:'#4ade80',name:'Calorie Boost Shake',kcal:Math.round(cal*.14),p:Math.round(prot*.18),
+     foods:`<strong>1–2 scoops <a href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank">whey protein</a></strong> blended in whole milk<br><strong>1 banana + 2 tbsp peanut butter</strong> blended in<br>Optional: ½ cup oats blended for extra carbs`,
+     supp:'This shake alone = 500–700 cal toward your daily goal'},
+    {time:'🍱 LUNCH',bg:'rgba(59,130,246,.15)',clr:'#60a5fa',name:'Big Lunch',kcal:Math.round(cal*.27),p:Math.round(prot*.28),
+     foods:`<strong>8oz chicken breast or lean beef</strong><br><strong>2 cups white rice</strong> (fast carbs for lifting energy)<br><strong>Broccoli or corn</strong><br>Drizzle of olive oil`,
+     supp:'Pre-workout 45 min before training'},
+    {time:'🔥 POST-WORKOUT',bg:'rgba(241,7,163,.15)',clr:'#ff7be5',name:'Anabolic Window',kcal:Math.round(cal*.12),p:Math.round(prot*.20),
+     foods:`<strong>1–2 scoops <a href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank">whey protein</a></strong> immediately<br><strong>Banana + white rice</strong> — fast carbs spike insulin for muscle uptake<br>Most important nutrition window of the day`,
+     supp:'Creatine (5g) if missed at breakfast'},
+    {time:'🌙 DINNER',bg:'rgba(20,184,166,.15)',clr:'#2dd4bf',name:'Evening Mass Meal',kcal:Math.round(cal*.25),p:Math.round(prot*.32),
+     foods:`<strong>8oz lean beef, salmon or chicken</strong><br><strong>Large sweet potato</strong> + steamed vegetables<br><strong>Whole grain bread</strong> or extra serving of rice<br>Cottage cheese before bed = slow protein overnight`,
+     supp:`Magnesium glycinate + <a href="https://www.amazon.com/dp/B07B8BSGPL/?tag=contractionca-20" target="_blank">probiotics</a> for recovery sleep`}
+  ];
+  return [
+    {time:'☀️ BREAKFAST',bg:'rgba(250,204,21,.15)',clr:'#facc15',name:'Balanced Power Breakfast',kcal:Math.round(cal*.22),p:Math.round(prot*.25),
+     foods:`<strong>3 whole eggs</strong> + spinach scramble<br><strong>1 cup oats</strong> with banana + berries<br><strong>Coffee</strong> or black tea`,
+     supp:'Creatine (5g) + Multivitamin + Fish oil at breakfast'},
+    {time:'🥤 MID-MORNING',bg:'rgba(34,197,94,.15)',clr:'#4ade80',name:'Protein Snack',kcal:Math.round(cal*.12),p:Math.round(prot*.18),
+     foods:`<strong>1 scoop <a href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank">whey protein</a></strong> in water or almond milk<br><strong>1 apple + handful of almonds</strong>`,
+     supp:'If training in 2 hours, good window for pre-workout'},
+    {time:'🍱 LUNCH',bg:'rgba(59,130,246,.15)',clr:'#60a5fa',name:'Performance Lunch',kcal:Math.round(cal*.27),p:Math.round(prot*.28),
+     foods:`<strong>6oz chicken, salmon or turkey</strong><br><strong>1 cup brown rice or quinoa</strong><br><strong>Big salad + steamed broccoli</strong><br>Olive oil + lemon dressing`,
+     supp:'Pre-workout 45 min before afternoon session'},
+    {time:'⚡ TRAINING WINDOW',bg:'rgba(241,7,163,.15)',clr:'#ff7be5',name:'Pre &amp; Post Workout',kcal:Math.round(cal*.12),p:Math.round(prot*.15),
+     foods:`<strong>Before:</strong> banana + rice cakes<br><strong><a href="https://www.amazon.com/dp/B07SH31T9V/?tag=contractionca-20" target="_blank">LMNT electrolytes</a></strong> during training<br><strong>After:</strong> 1 scoop whey + banana immediately`,
+     supp:'30 min post-workout is the most important nutrition window'},
+    {time:'🌙 DINNER',bg:'rgba(20,184,166,.15)',clr:'#2dd4bf',name:'Recovery Dinner',kcal:Math.round(cal*.27),p:Math.round(prot*.28),
+     foods:`<strong>6oz salmon, beef or chicken</strong><br><strong>Sweet potato or quinoa</strong><br><strong>Roasted veggies</strong> — broccoli, asparagus, peppers<br>Olive oil + lemon`,
+     supp:`Magnesium glycinate + <a href="https://www.amazon.com/dp/B07B8BSGPL/?tag=contractionca-20" target="_blank">probiotics</a> before sleep`}
+  ];
+}
+
 // Tab active state on scroll
 const tabs = document.querySelectorAll('.tab');
-const secIds = ['women','men','byage','skin','schedule','timing','detox'];
+const secIds = ['women','men','byage','skin','schedule','timing','detox','goals','meals'];
 window.addEventListener('scroll', () => {
   let cur = 'women';
   secIds.forEach(id => { const el = document.getElementById(id); if(el && window.scrollY >= el.offsetTop - 130) cur = id; });
