@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fit & Fueled — Complete Supplement & Muscle Guide</title>
+<meta name="description" content="Complete supplement guide for men and women. Pre-workout, protein, detox, nutrition timing, and muscle-building schedule. All top-rated Amazon picks.">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+html { scroll-behavior:smooth; }
+body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:#0d0d0d; color:#f0f0f0; min-height:100vh; }
+
+/* ── HERO ── */
+.hero { background:linear-gradient(135deg,#7b2ff7 0%,#f107a3 100%); padding:48px 20px 32px; text-align:center; }
+.hero-badge { display:inline-block; background:rgba(255,255,255,.2); border-radius:20px; padding:5px 16px; font-size:12px; font-weight:700; color:#fff; letter-spacing:.8px; margin-bottom:14px; }
+.hero h1 { font-size:34px; font-weight:900; color:#fff; letter-spacing:-1px; line-height:1.1; }
+.hero p { margin-top:8px; font-size:14px; color:rgba(255,255,255,.8); line-height:1.5; }
+
+/* ── STICKY NAV TABS ── */
+.tabs { position:sticky; top:0; z-index:100; background:#111; border-bottom:1px solid #222; display:flex; overflow-x:auto; scrollbar-width:none; }
+.tabs::-webkit-scrollbar { display:none; }
+.tab { flex-shrink:0; padding:14px 18px; font-size:13px; font-weight:600; color:#666; cursor:pointer; border-bottom:2px solid transparent; white-space:nowrap; transition:color .2s,border-color .2s; text-decoration:none; }
+.tab:hover,.tab.active { color:#fff; border-bottom-color:#7b2ff7; }
+
+/* ── LAYOUT ── */
+.container { max-width:560px; margin:0 auto; padding:20px 14px 60px; }
+.section { padding-top:16px; }
+
+/* ── SECTION HEADERS ── */
+.section-label { font-size:10px; font-weight:700; letter-spacing:1.8px; color:#555; text-transform:uppercase; margin:28px 0 12px; }
+.section-header { background:linear-gradient(135deg,#7b2ff7,#f107a3); border-radius:16px; padding:20px; margin-bottom:16px; }
+.section-header h2 { font-size:22px; font-weight:800; color:#fff; }
+.section-header p { font-size:13px; color:rgba(255,255,255,.8); margin-top:4px; }
+
+/* ── PRODUCT CARDS ── */
+.card { background:#1a1a1a; border-radius:14px; padding:14px; margin-bottom:9px; display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit; border:1px solid #242424; transition:border-color .2s,transform .15s; }
+.card:active { transform:scale(.98); }
+.card:hover { border-color:#7b2ff7; }
+.card-icon { width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:24px; flex-shrink:0; }
+.card-body { flex:1; min-width:0; }
+.card-title { font-size:14px; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.card-sub { font-size:11px; color:#666; margin-top:2px; }
+.card-tag { font-size:11px; font-weight:700; padding:4px 10px; border-radius:20px; flex-shrink:0; }
+
+/* ── TAG COLORS ── */
+.c-purple { background:rgba(123,47,247,.15); } .t-purple { background:rgba(123,47,247,.2); color:#b57bff; }
+.c-pink   { background:rgba(241,7,163,.15); }  .t-pink   { background:rgba(241,7,163,.2); color:#ff7be5; }
+.c-green  { background:rgba(34,197,94,.15); }  .t-green  { background:rgba(34,197,94,.2); color:#4ade80; }
+.c-orange { background:rgba(251,146,60,.15); } .t-orange { background:rgba(251,146,60,.2); color:#fb923c; }
+.c-blue   { background:rgba(59,130,246,.15); } .t-blue   { background:rgba(59,130,246,.2); color:#60a5fa; }
+.c-red    { background:rgba(239,68,68,.15); }  .t-red    { background:rgba(239,68,68,.2); color:#f87171; }
+.c-teal   { background:rgba(20,184,166,.15); } .t-teal   { background:rgba(20,184,166,.2); color:#2dd4bf; }
+.c-yellow { background:rgba(234,179,8,.15); }  .t-yellow { background:rgba(234,179,8,.2); color:#facc15; }
+
+/* ── INFO CARDS ── */
+.info-card { background:#1a1a1a; border:1px solid #242424; border-radius:14px; padding:18px; margin-bottom:9px; }
+.info-card h3 { font-size:15px; font-weight:700; color:#fff; margin-bottom:10px; }
+.info-card ul { list-style:none; }
+.info-card ul li { font-size:13px; color:#aaa; line-height:1.6; padding:3px 0 3px 18px; position:relative; }
+.info-card ul li::before { content:"→"; position:absolute; left:0; color:#7b2ff7; font-weight:700; }
+.info-label { font-size:10px; font-weight:700; letter-spacing:.8px; color:#7b2ff7; margin-bottom:6px; }
+
+/* ── TIMELINE ── */
+.timeline-row { display:flex; align-items:flex-start; gap:12px; margin-bottom:16px; }
+.timeline-row:last-child { margin-bottom:0; }
+.tl-dot { width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:17px; flex-shrink:0; }
+.tl-body { flex:1; }
+.tl-time { font-size:10px; font-weight:700; color:#7b2ff7; letter-spacing:.5px; margin-bottom:2px; }
+.tl-label { font-size:14px; font-weight:700; color:#fff; margin-bottom:3px; }
+.tl-note { font-size:12px; color:#888; line-height:1.5; }
+.tl-note a { color:#b57bff; text-decoration:none; font-weight:600; }
+
+/* ── WORKOUT SCHEDULE ── */
+.day-card { background:#1a1a1a; border:1px solid #242424; border-radius:14px; padding:16px; margin-bottom:9px; }
+.day-header { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+.day-badge { font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px; }
+.day-name { font-size:15px; font-weight:700; color:#fff; }
+.day-focus { font-size:12px; color:#888; }
+.exercises { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
+.ex-tag { font-size:11px; background:#252525; color:#aaa; padding:4px 10px; border-radius:20px; }
+.day-supp { font-size:12px; color:#888; border-top:1px solid #242424; padding-top:10px; }
+.day-supp strong { color:#b57bff; }
+.day-supp a { color:#b57bff; text-decoration:none; }
+
+/* ── 2-COL GRID ── */
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:9px; margin-bottom:9px; }
+.mini-card { background:#1a1a1a; border:1px solid #242424; border-radius:14px; padding:14px; text-decoration:none; color:inherit; transition:border-color .2s; }
+.mini-card:hover { border-color:#f107a3; }
+.mini-emoji { font-size:26px; margin-bottom:8px; display:block; }
+.mini-title { font-size:13px; font-weight:700; color:#fff; }
+.mini-desc { font-size:11px; color:#666; margin-top:2px; }
+
+/* ── CTA ── */
+.cta { display:block; background:linear-gradient(135deg,#7b2ff7,#f107a3); color:#fff; font-weight:800; font-size:15px; text-align:center; padding:17px; border-radius:14px; text-decoration:none; margin:16px 0; letter-spacing:.3px; }
+.cta:hover { opacity:.9; }
+
+/* ── DIVIDER ── */
+.divider { height:1px; background:#1e1e1e; margin:24px 0; }
+
+/* ── FOOTER ── */
+.footer { text-align:center; font-size:11px; color:#444; padding:0 16px 32px; line-height:1.7; }
+
+/* ── HIGHLIGHT BOX ── */
+.highlight { background:rgba(123,47,247,.1); border:1px solid rgba(123,47,247,.3); border-radius:12px; padding:14px; margin-bottom:9px; font-size:13px; color:#ccc; line-height:1.6; }
+.highlight strong { color:#b57bff; }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">💪 FREE SUPPLEMENT GUIDE</div>
+  <h1>Fit & Fueled</h1>
+  <p>Complete guide for men & women — supplements, muscle building, nutrition timing & detox. All top Amazon picks.</p>
+</div>
+
+<!-- STICKY TABS -->
+<div class="tabs">
+  <a class="tab active" href="#women">👩 Women</a>
+  <a class="tab" href="#men">💪 Men</a>
+  <a class="tab" href="#schedule">📅 Workout Schedule</a>
+  <a class="tab" href="#timing">⏰ Timing Guide</a>
+  <a class="tab" href="#nutrition">🥗 Nutrition</a>
+  <a class="tab" href="#detox">🌿 Detox</a>
+</div>
+
+<div class="container">
+
+<!-- ════════════════════════════════════ WOMEN ════════════════════════════════════ -->
+<div class="section" id="women">
+  <div class="section-header">
+    <h2>👩 Women's Guide</h2>
+    <p>Top-rated supplements for women — fat loss, muscle tone, energy & recovery</p>
+  </div>
+
+  <div class="section-label">🔥 Pre-Workout</div>
+
+  <a class="card" href="https://www.amazon.com/dp/B07FTTGM6N/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-purple">💜</div>
+    <div class="card-body"><div class="card-title">RSP AminoLean</div><div class="card-sub">33,000+ reviews • Pink Lemonade • ~$29</div></div>
+    <span class="card-tag t-purple">#1 Sold</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B07DRR68F8/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-pink">🌺</div>
+    <div class="card-body"><div class="card-title">Alani Nu Pre-Workout</div><div class="card-sub">Influencer fave • Hawaiian Shaved Ice • ~$40</div></div>
+    <span class="card-tag t-pink">Viral</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B0BQ7PQD9F/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-green">🌸</div>
+    <div class="card-body"><div class="card-title">Bloom Nutrition Pre-Workout</div><div class="card-sub">Female-founded • Raspberry Lemonade • ~$38</div></div>
+    <span class="card-tag t-green">Women's #1</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B07TCCPZZL/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-orange">⚡</div>
+    <div class="card-body"><div class="card-title">Jacked Factory Nitrosurge</div><div class="card-sub">22,000+ reviews • Cherry Limeade • ~$20</div></div>
+    <span class="card-tag t-orange">Best Value</span>
+  </a>
+
+  <div class="section-label">🥛 Protein</div>
+
+  <a class="card" href="https://www.amazon.com/dp/B00J074W7Q/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-green">🌱</div>
+    <div class="card-body"><div class="card-title">Orgain Organic Vegan Protein</div><div class="card-sub">#1 Protein Powder Blends • Vanilla • ~$30</div></div>
+    <span class="card-tag t-green">Plant-Based</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B08M49JYZ2/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-pink">🍪</div>
+    <div class="card-body"><div class="card-title">Alani Nu Whey Protein</div><div class="card-sub">23g protein • Munchies flavor • ~$45</div></div>
+    <span class="card-tag t-pink">Top Pick</span>
+  </a>
+
+  <div class="section-label">🔥 Fat Burner</div>
+
+  <a class="card" href="https://www.amazon.com/dp/B01BXLYEQ0/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-red">🔥</div>
+    <div class="card-body"><div class="card-title">Jacked Factory Burn-XT</div><div class="card-sub">#1 Fat Burner 3+ years • 60 caps • ~$30</div></div>
+    <span class="card-tag t-red">Best Seller</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B004KQBGDA/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-orange">💊</div>
+    <div class="card-body"><div class="card-title">Hydroxycut Max for Women</div><div class="card-sub">Women-specific formula • 120 caps • ~$25</div></div>
+    <span class="card-tag t-orange">For Women</span>
+  </a>
+
+  <div class="section-label">🌿 Detox Tea</div>
+
+  <a class="card" href="https://www.amazon.com/dp/B09XVQ5W8M/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-green">🍵</div>
+    <div class="card-body"><div class="card-title">Total Tea Slimming Detox</div><div class="card-sub">Caffeine-free • Chamomile + Ginger • ~$22</div></div>
+    <span class="card-tag t-green">#1 Detox Tea</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B0CBCRL1KF/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-teal">🍑</div>
+    <div class="card-body"><div class="card-title">LULUTOX Detox Tea</div><div class="card-sub">Ginseng + Ginger • Peach flavor • ~$22</div></div>
+    <span class="card-tag t-teal">Trending</span>
+  </a>
+
+  <div class="section-label">✨ Collagen</div>
+
+  <a class="card" href="https://www.amazon.com/dp/B00XQ2XGAA/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-pink">✨</div>
+    <div class="card-body"><div class="card-title">Sports Research Collagen Peptides</div><div class="card-sub">#3 in Collagen • Unflavored • ~$27</div></div>
+    <span class="card-tag t-pink">Top Rated</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B0D19MF171/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-purple">💜</div>
+    <div class="card-body"><div class="card-title">Vital Proteins Collagen</div><div class="card-sub">With Vitamin C + Hyaluronic Acid • ~$35</div></div>
+    <span class="card-tag t-purple">Women's Formula</span>
+  </a>
+
+  <div class="section-label">💊 Daily Essentials</div>
+
+  <a class="card" href="https://www.amazon.com/dp/B09QBKGDLS/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-blue">🌸</div>
+    <div class="card-body"><div class="card-title">One A Day Women's Multivitamin</div><div class="card-sub">200 count • #13 in Multivitamins • ~$20</div></div>
+    <span class="card-tag t-blue">Daily Must</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B07B8BSGPL/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-green">🦠</div>
+    <div class="card-body"><div class="card-title">Physician's Choice Probiotics</div><div class="card-sub">56,000+ reviews • #1 Probiotics • ~$26</div></div>
+    <span class="card-tag t-green">#1 Probiotics</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B07SH31T9V/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-blue">💧</div>
+    <div class="card-body"><div class="card-title">LMNT Zero Sugar Electrolytes</div><div class="card-sub">#1 Electrolytes • Raspberry Salt • ~$22</div></div>
+    <span class="card-tag t-blue">#1 Hydration</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B07BV6Y72J/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-purple">💪</div>
+    <div class="card-body"><div class="card-title">XTEND Sport BCAA Powder</div><div class="card-sub">NSF Certified • Blue Raspberry • ~$22</div></div>
+    <span class="card-tag t-purple">Recovery</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B0DJDQCJX2/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-teal">⚡</div>
+    <div class="card-body"><div class="card-title">Clean Nutra Creatine for Women</div><div class="card-sub">#1 Women's Creatine keyword • ~$39</div></div>
+    <span class="card-tag t-teal">Strength</span>
+  </a>
+
+  <!-- Women's Tips -->
+  <div class="section-label">🔬 Women's Tips</div>
+  <div class="info-card">
+    <div class="info-label">TRAIN WITH YOUR CYCLE</div>
+    <h3>Cycle-Aware Training</h3>
+    <ul>
+      <li>Days 1–14 (Follicular): Energy is HIGH — push harder, lift heavier, go for PRs</li>
+      <li>Days 15–28 (Luteal): Increase carbs slightly, reduce intensity, prioritize sleep & recovery</li>
+      <li>Iron is critical — low iron causes fatigue & poor performance; eat red meat or spinach weekly</li>
+      <li>Calcium + Vitamin D together protect bones, especially during high-impact training</li>
+      <li>Protein needs are underestimated in women — aim for 0.7g per lb bodyweight minimum</li>
+    </ul>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════ MEN ════════════════════════════════════ -->
+<div class="section" id="men">
+  <div class="section-header">
+    <h2>💪 Men's Guide</h2>
+    <p>Build muscle, burn fat, protect testosterone — top-rated Amazon picks for men</p>
+  </div>
+
+  <div class="section-label">⚡ Pre-Workout</div>
+
+  <a class="card" href="https://www.amazon.com/dp/B07349CKML/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-red">🔴</div>
+    <div class="card-body"><div class="card-title">Cellucor C4 Sport Pre-Workout</div><div class="card-sub">#2 Pre-Workout Powders • Watermelon • ~$18</div></div>
+    <span class="card-tag t-red">Most Popular</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B0CM9R6J4L/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-blue">⭐</div>
+    <div class="card-body"><div class="card-title">Six Star Pre-Workout Explosion</div><div class="card-sub">#4 Pre-Workout Powders • Fruit Punch • ~$14</div></div>
+    <span class="card-tag t-blue">Best Value</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B0CMWL2M8X/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-red">💥</div>
+    <div class="card-body"><div class="card-title">Edge of Insanity — 350mg Caffeine</div><div class="card-sub">Max stimulant • Yohimbine • 25 servings • ~$40</div></div>
+    <span class="card-tag t-red">Max Energy</span>
+  </a>
+
+  <div class="section-label">🥛 Protein</div>
+
+  <a class="card" href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-orange">🏆</div>
+    <div class="card-body"><div class="card-title">ON Gold Standard 100% Whey — 5lb</div><div class="card-sub">100,000+ reviews • Double Chocolate • ~$60</div></div>
+    <span class="card-tag t-orange">#1 Protein</span>
+  </a>
+
+  <div class="section-label">💪 Strength & Muscle</div>
+
+  <a class="card" href="https://www.amazon.com/dp/B002DYIZEO/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-purple">⚗️</div>
+    <div class="card-body"><div class="card-title">ON Micronized Creatine — 120 servings</div><div class="card-sub">Unflavored • Mix with anything • ~$23</div></div>
+    <span class="card-tag t-purple">Must Have</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B0DYK9HHFW/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-yellow">🔑</div>
+    <div class="card-body"><div class="card-title">TestoPrime Testosterone Booster</div><div class="card-sub">Ashwagandha + D-Aspartic Acid • ~$55</div></div>
+    <span class="card-tag t-yellow">T-Support</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B00PHK9C6G/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-blue">🔋</div>
+    <div class="card-body"><div class="card-title">EVL BCAA Energy Powder</div><div class="card-sub">5g BCAAs + Natural Caffeine • Fruit Punch • ~$25</div></div>
+    <span class="card-tag t-blue">Recovery</span>
+  </a>
+
+  <div class="section-label">🩺 Health & Detox</div>
+
+  <a class="card" href="https://www.amazon.com/dp/B00CAZAU62/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-blue">🐟</div>
+    <div class="card-body"><div class="card-title">Dr. Tobias Omega 3 Fish Oil</div><div class="card-sub">Triple Strength • 800mg EPA • 180 softgels • ~$30</div></div>
+    <span class="card-tag t-blue">Heart Health</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B0DSJYJ2G2/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-green">🌿</div>
+    <div class="card-body"><div class="card-title">Liver Cleanse Detox 27-in-1</div><div class="card-sub">Milk Thistle + Dandelion + Turmeric • ~$22</div></div>
+    <span class="card-tag t-green">Detox</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B01BXLYEQ0/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-red">🔥</div>
+    <div class="card-body"><div class="card-title">Jacked Factory Burn-XT Fat Burner</div><div class="card-sub">#1 Fat Burner • Green Tea + Carnitine • ~$30</div></div>
+    <span class="card-tag t-red">Fat Loss</span>
+  </a>
+
+  <a class="card" href="https://www.amazon.com/dp/B001F71XAI/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-blue">💊</div>
+    <div class="card-body"><div class="card-title">One A Day Men's Multivitamin</div><div class="card-sub">200 count • Heart health formula • ~$14</div></div>
+    <span class="card-tag t-blue">Daily</span>
+  </a>
+
+  <!-- Men's Tips -->
+  <div class="section-label">🔬 Men's Tips</div>
+  <div class="info-card">
+    <div class="info-label">PROTECT YOUR TESTOSTERONE</div>
+    <h3>Testosterone & Muscle Tips</h3>
+    <ul>
+      <li>Prioritize zinc, magnesium, and vitamin D — all directly support testosterone production</li>
+      <li>Bulking: eat in a 300–500 calorie surplus, prioritize compound lifts + 8hrs sleep</li>
+      <li>Cutting: keep protein at 1g per lb to preserve muscle while in a calorie deficit</li>
+      <li>Avoid chronic cardio and under-eating — both tank testosterone over time</li>
+      <li>Even moderate alcohol measurably suppresses testosterone for 24–48 hours</li>
+    </ul>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════ WORKOUT SCHEDULE ════════════════════════════════════ -->
+<div class="section" id="schedule">
+  <div class="section-header">
+    <h2>📅 7-Day Muscle Building Schedule</h2>
+    <p>The exact split to build muscle fast — with supplement timing for each day</p>
+  </div>
+
+  <div class="highlight">
+    <strong>The Rule:</strong> Hit each muscle group 2x per week. Rest 48hrs between same muscle groups. Never skip legs. Progressive overload = add weight or reps every session.
+  </div>
+
+  <!-- Monday -->
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-badge" style="background:rgba(123,47,247,.2);color:#b57bff;">MON</span>
+      <div><div class="day-name">Chest + Triceps</div><div class="day-focus">Push Day — Heavy Compound Focus</div></div>
+    </div>
+    <div class="exercises">
+      <span class="ex-tag">Bench Press 4×6</span><span class="ex-tag">Incline Dumbbell 3×10</span>
+      <span class="ex-tag">Cable Fly 3×12</span><span class="ex-tag">Tricep Dips 3×12</span>
+      <span class="ex-tag">Skull Crushers 3×10</span>
+    </div>
+    <div class="day-supp">💊 <strong>Pre:</strong> <a href="https://www.amazon.com/dp/B07349CKML/?tag=contractionca-20" target="_blank">C4 Pre-Workout (men)</a> / <a href="https://www.amazon.com/dp/B07DRR68F8/?tag=contractionca-20" target="_blank">Alani Nu (women)</a> &nbsp;|&nbsp; <strong>Post:</strong> <a href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank">Whey Protein</a> + <a href="https://www.amazon.com/dp/B002DYIZEO/?tag=contractionca-20" target="_blank">Creatine</a></div>
+  </div>
+
+  <!-- Tuesday -->
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-badge" style="background:rgba(59,130,246,.2);color:#60a5fa;">TUE</span>
+      <div><div class="day-name">Back + Biceps</div><div class="day-focus">Pull Day — Width + Thickness</div></div>
+    </div>
+    <div class="exercises">
+      <span class="ex-tag">Deadlift 4×5</span><span class="ex-tag">Pull-Ups 4×8</span>
+      <span class="ex-tag">Barbell Row 3×8</span><span class="ex-tag">Lat Pulldown 3×12</span>
+      <span class="ex-tag">Barbell Curl 3×10</span>
+    </div>
+    <div class="day-supp">💊 <strong>Pre:</strong> <a href="https://www.amazon.com/dp/B07FTTGM6N/?tag=contractionca-20" target="_blank">AminoLean (women)</a> / <a href="https://www.amazon.com/dp/B07349CKML/?tag=contractionca-20" target="_blank">C4 (men)</a> &nbsp;|&nbsp; <strong>Post:</strong> <a href="https://www.amazon.com/dp/B00PHK9C6G/?tag=contractionca-20" target="_blank">BCAAs</a> + Protein shake</div>
+  </div>
+
+  <!-- Wednesday -->
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-badge" style="background:rgba(34,197,94,.2);color:#4ade80;">WED</span>
+      <div><div class="day-name">Shoulders + Core</div><div class="day-focus">Press + Stability</div></div>
+    </div>
+    <div class="exercises">
+      <span class="ex-tag">OHP 4×6</span><span class="ex-tag">Lateral Raises 4×15</span>
+      <span class="ex-tag">Front Raises 3×12</span><span class="ex-tag">Face Pulls 3×15</span>
+      <span class="ex-tag">Planks 3×60s</span><span class="ex-tag">Cable Crunches 3×15</span>
+    </div>
+    <div class="day-supp">💊 <strong>Pre:</strong> <a href="https://www.amazon.com/dp/B07TCCPZZL/?tag=contractionca-20" target="_blank">Nitrosurge</a> &nbsp;|&nbsp; <strong>Post:</strong> <a href="https://www.amazon.com/dp/B07SH31T9V/?tag=contractionca-20" target="_blank">LMNT Electrolytes</a> + protein</div>
+  </div>
+
+  <!-- Thursday -->
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-badge" style="background:rgba(239,68,68,.2);color:#f87171;">THU</span>
+      <div><div class="day-name">Legs — Quads + Glutes</div><div class="day-focus">Leg Day — No Skipping</div></div>
+    </div>
+    <div class="exercises">
+      <span class="ex-tag">Squat 4×6</span><span class="ex-tag">Leg Press 3×12</span>
+      <span class="ex-tag">Romanian Deadlift 3×10</span><span class="ex-tag">Lunges 3×12</span>
+      <span class="ex-tag">Leg Curl 3×12</span><span class="ex-tag">Calf Raises 4×20</span>
+    </div>
+    <div class="day-supp">💊 <strong>Pre:</strong> <a href="https://www.amazon.com/dp/B0BQ7PQD9F/?tag=contractionca-20" target="_blank">Bloom (women)</a> / <a href="https://www.amazon.com/dp/B0CMWL2M8X/?tag=contractionca-20" target="_blank">Edge of Insanity (men)</a> &nbsp;|&nbsp; <strong>Post:</strong> <a href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank">Whey</a> + <a href="https://www.amazon.com/dp/B002DYIZEO/?tag=contractionca-20" target="_blank">Creatine</a></div>
+  </div>
+
+  <!-- Friday -->
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-badge" style="background:rgba(251,146,60,.2);color:#fb923c;">FRI</span>
+      <div><div class="day-name">Full Body Power</div><div class="day-focus">Compound Heavy — PR Day</div></div>
+    </div>
+    <div class="exercises">
+      <span class="ex-tag">Bench Press 5×3</span><span class="ex-tag">Squat 5×3</span>
+      <span class="ex-tag">Deadlift 3×3</span><span class="ex-tag">Pull-Ups 3×max</span>
+      <span class="ex-tag">Farmers Carry 3×40m</span>
+    </div>
+    <div class="day-supp">💊 <strong>Pre:</strong> Your strongest pre-workout &nbsp;|&nbsp; <strong>Post:</strong> High-protein meal within 30 min + <a href="https://www.amazon.com/dp/B002DYIZEO/?tag=contractionca-20" target="_blank">creatine</a></div>
+  </div>
+
+  <!-- Saturday -->
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-badge" style="background:rgba(234,179,8,.2);color:#facc15;">SAT</span>
+      <div><div class="day-name">Arms + Core</div><div class="day-focus">Pump Day — Volume Focus</div></div>
+    </div>
+    <div class="exercises">
+      <span class="ex-tag">Barbell Curl 4×10</span><span class="ex-tag">Hammer Curl 3×12</span>
+      <span class="ex-tag">Tricep Pushdown 4×12</span><span class="ex-tag">Overhead Extension 3×12</span>
+      <span class="ex-tag">Hanging Leg Raise 3×15</span>
+    </div>
+    <div class="day-supp">💊 <strong>Pre:</strong> <a href="https://www.amazon.com/dp/B07FTTGM6N/?tag=contractionca-20" target="_blank">AminoLean</a> &nbsp;|&nbsp; <strong>Post:</strong> <a href="https://www.amazon.com/dp/B07BV6Y72J/?tag=contractionca-20" target="_blank">BCAAs</a> + light meal</div>
+  </div>
+
+  <!-- Sunday -->
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-badge" style="background:rgba(20,184,166,.2);color:#2dd4bf;">SUN</span>
+      <div><div class="day-name">Rest + Active Recovery</div><div class="day-focus">Grow on Your Days Off</div></div>
+    </div>
+    <div class="exercises">
+      <span class="ex-tag">Light walk 20–30 min</span><span class="ex-tag">Stretching / Yoga</span>
+      <span class="ex-tag">Foam rolling</span><span class="ex-tag">Sleep 8+ hrs</span>
+    </div>
+    <div class="day-supp">💊 <strong>Today:</strong> <a href="https://www.amazon.com/dp/B00CAZAU62/?tag=contractionca-20" target="_blank">Fish oil</a> + <a href="https://www.amazon.com/dp/B09QBKGDLS/?tag=contractionca-20" target="_blank">multivitamin</a> + magnesium at night for deep sleep</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════ TIMING GUIDE ════════════════════════════════════ -->
+<div class="section" id="timing">
+  <div class="section-header">
+    <h2>⏰ Supplement Timing Guide</h2>
+    <p>Right supplement. Right time. Maximum results.</p>
+  </div>
+
+  <div class="info-card">
+    <div class="timeline-row">
+      <div class="tl-dot c-yellow">☀️</div>
+      <div class="tl-body">
+        <div class="tl-time">WAKE UP — MORNING</div>
+        <div class="tl-label">Foundation Stack</div>
+        <div class="tl-note"><a href="https://www.amazon.com/dp/B09QBKGDLS/?tag=contractionca-20" target="_blank">Multivitamin</a> + <a href="https://www.amazon.com/dp/B00CAZAU62/?tag=contractionca-20" target="_blank">fish oil</a> + <a href="https://www.amazon.com/dp/B002DYIZEO/?tag=contractionca-20" target="_blank">creatine</a> (5g). Take with breakfast. Vitamin D with fat for absorption.</div>
+      </div>
+    </div>
+    <div class="timeline-row">
+      <div class="tl-dot c-purple">⚡</div>
+      <div class="tl-body">
+        <div class="tl-time">30–45 MIN BEFORE TRAINING</div>
+        <div class="tl-label">Pre-Workout Window</div>
+        <div class="tl-note">Take your pre-workout on a light stomach. Women: <a href="https://www.amazon.com/dp/B07DRR68F8/?tag=contractionca-20" target="_blank">Alani Nu</a> or <a href="https://www.amazon.com/dp/B07FTTGM6N/?tag=contractionca-20" target="_blank">AminoLean</a>. Men: <a href="https://www.amazon.com/dp/B07349CKML/?tag=contractionca-20" target="_blank">C4</a> or <a href="https://www.amazon.com/dp/B0CMWL2M8X/?tag=contractionca-20" target="_blank">Edge of Insanity</a>. Add <a href="https://www.amazon.com/dp/B07BV6Y72J/?tag=contractionca-20" target="_blank">BCAAs</a> if training fasted.</div>
+      </div>
+    </div>
+    <div class="timeline-row">
+      <div class="tl-dot c-red">🏋️</div>
+      <div class="tl-body">
+        <div class="tl-time">DURING TRAINING</div>
+        <div class="tl-label">Stay Fueled & Hydrated</div>
+        <div class="tl-note">Sip <a href="https://www.amazon.com/dp/B07SH31T9V/?tag=contractionca-20" target="_blank">LMNT electrolytes</a> throughout session. Add <a href="https://www.amazon.com/dp/B07BV6Y72J/?tag=contractionca-20" target="_blank">BCAAs</a> to your water if session is 60+ minutes.</div>
+      </div>
+    </div>
+    <div class="timeline-row">
+      <div class="tl-dot c-green">🥤</div>
+      <div class="tl-body">
+        <div class="tl-time">WITHIN 30 MIN AFTER</div>
+        <div class="tl-label">Post-Workout Anabolic Window</div>
+        <div class="tl-note"><a href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank">Whey protein</a> (25–40g) immediately. Fast carbs (banana, white rice). If missed creatine in AM, take <a href="https://www.amazon.com/dp/B002DYIZEO/?tag=contractionca-20" target="_blank">creatine</a> now. Rehydrate with 20+ oz water.</div>
+      </div>
+    </div>
+    <div class="timeline-row">
+      <div class="tl-dot c-teal">🌙</div>
+      <div class="tl-body">
+        <div class="tl-time">BEFORE BED</div>
+        <div class="tl-label">Overnight Recovery</div>
+        <div class="tl-note">Magnesium glycinate (200–400mg) for deep sleep. <a href="https://www.amazon.com/dp/B07B8BSGPL/?tag=contractionca-20" target="_blank">Probiotics</a> at night for gut health. Optional: casein protein if in muscle-building phase. No caffeine after 4pm.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <strong>⚠️ Don't take pre-workout after 4pm.</strong> 200mg caffeine stays in your system 5–6 hours and kills sleep quality — which is when 80% of muscle repair happens.
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════ NUTRITION ════════════════════════════════════ -->
+<div class="section" id="nutrition">
+  <div class="section-header">
+    <h2>🥗 Nutrition Guide</h2>
+    <p>What to eat and when — the exact fuel plan to build muscle fast</p>
+  </div>
+
+  <div class="section-label">🍳 PRE-WORKOUT MEAL (1–2 hrs before)</div>
+  <div class="info-card">
+    <h3>Fuel the Work, Not the Crash</h3>
+    <ul>
+      <li>Eat fast-digesting carbs + lean protein — oatmeal + eggs, rice + chicken, banana + Greek yogurt</li>
+      <li>Avoid high-fat and high-fiber foods — they slow digestion and kill energy mid-session</li>
+      <li>Hydrate with 16–20 oz water before you even step in the gym</li>
+      <li>If training fasted: at minimum take <a href="https://www.amazon.com/dp/B07BV6Y72J/?tag=contractionca-20" target="_blank" style="color:#b57bff;">BCAAs</a> to protect muscle tissue</li>
+    </ul>
+  </div>
+
+  <div class="section-label">🏆 POST-WORKOUT MEAL (within 30–60 min)</div>
+  <div class="info-card">
+    <h3>Your Muscles Are Open for Business</h3>
+    <ul>
+      <li>Priority: 25–40g protein immediately — <a href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank" style="color:#b57bff;">whey</a>, eggs, or lean meat</li>
+      <li>Add fast carbs to replenish glycogen: white rice, fruit, or a sports drink</li>
+      <li>Skip high fats right after — they slow nutrient absorption into muscle</li>
+      <li>Chocolate milk is underrated and science-backed for recovery</li>
+      <li>Rehydrate aggressively — replace every ounce of sweat lost</li>
+    </ul>
+  </div>
+
+  <div class="section-label">😴 REST DAY EATING</div>
+  <div class="info-card">
+    <h3>Rest Days = Repair Days, Not Cheat Days</h3>
+    <ul>
+      <li>Slightly reduce carbs — less output means less need for glycogen replenishment</li>
+      <li>Keep protein HIGH (0.7–1g per lb bodyweight) to sustain muscle repair</li>
+      <li>Load up on anti-inflammatory foods: berries, leafy greens, fatty fish, turmeric</li>
+      <li>Focus on micronutrients — zinc, magnesium, and vitamin C accelerate recovery</li>
+      <li>Consistency beats restriction every time — don't binge, don't starve</li>
+    </ul>
+  </div>
+
+  <div class="section-label">🛒 SHOP NUTRITION ESSENTIALS</div>
+  <div class="grid-2">
+    <a class="mini-card" href="https://www.amazon.com/s?k=whey+protein+powder+best+seller&tag=contractionca-20" target="_blank">
+      <span class="mini-emoji">🥛</span>
+      <div class="mini-title">Protein Powders</div>
+      <div class="mini-desc">All top-rated options</div>
+    </a>
+    <a class="mini-card" href="https://www.amazon.com/s?k=creatine+monohydrate+best+seller&tag=contractionca-20" target="_blank">
+      <span class="mini-emoji">⚗️</span>
+      <div class="mini-title">Creatine</div>
+      <div class="mini-desc">Best sellers</div>
+    </a>
+    <a class="mini-card" href="https://www.amazon.com/s?k=bcaa+amino+acids+best+seller&tag=contractionca-20" target="_blank">
+      <span class="mini-emoji">💊</span>
+      <div class="mini-title">BCAAs & Aminos</div>
+      <div class="mini-desc">Recovery support</div>
+    </a>
+    <a class="mini-card" href="https://www.amazon.com/s?k=electrolytes+workout+best+seller&tag=contractionca-20" target="_blank">
+      <span class="mini-emoji">💧</span>
+      <div class="mini-title">Electrolytes</div>
+      <div class="mini-desc">Stay hydrated</div>
+    </a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════ DETOX ════════════════════════════════════ -->
+<div class="section" id="detox">
+  <div class="section-header">
+    <h2>🌿 3-Day Detox Reset</h2>
+    <p>No starving. No misery. Real results in 72 hours.</p>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-badge" style="background:rgba(34,197,94,.2);color:#4ade80;">DAY 1</span>
+      <div><div class="day-name">Cut & Cleanse</div><div class="day-focus">Eliminate + Hydrate</div></div>
+    </div>
+    <ul style="list-style:none;padding:0;">
+      <li style="font-size:13px;color:#aaa;padding:3px 0 3px 18px;position:relative;">
+        <span style="position:absolute;left:0;color:#4ade80;">→</span>Cut alcohol, processed sugar, and ultra-processed food — cold turkey, 3 days
+      </li>
+      <li style="font-size:13px;color:#aaa;padding:3px 0 3px 18px;position:relative;">
+        <span style="position:absolute;left:0;color:#4ade80;">→</span>Drink 3+ liters of water — add lemon for liver support
+      </li>
+      <li style="font-size:13px;color:#aaa;padding:3px 0 3px 18px;position:relative;">
+        <span style="position:absolute;left:0;color:#4ade80;">→</span>Morning: <a href="https://www.amazon.com/dp/B09XVQ5W8M/?tag=contractionca-20" target="_blank" style="color:#4ade80;">Detox tea</a> on empty stomach
+      </li>
+      <li style="font-size:13px;color:#aaa;padding:3px 0 3px 18px;position:relative;">
+        <span style="position:absolute;left:0;color:#4ade80;">→</span>Eat whole foods only: vegetables, fruit, lean protein, legumes, whole grains
+      </li>
+    </ul>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-badge" style="background:rgba(59,130,246,.2);color:#60a5fa;">DAY 2</span>
+      <div><div class="day-name">Support & Flush</div><div class="day-focus">Liver + Gut Support</div></div>
+    </div>
+    <ul style="list-style:none;padding:0;">
+      <li style="font-size:13px;color:#aaa;padding:3px 0 3px 18px;position:relative;">
+        <span style="position:absolute;left:0;color:#60a5fa;">→</span><a href="https://www.amazon.com/dp/B0DSJYJ2G2/?tag=contractionca-20" target="_blank" style="color:#60a5fa;">Liver cleanse supplement</a> — milk thistle + dandelion root
+      </li>
+      <li style="font-size:13px;color:#aaa;padding:3px 0 3px 18px;position:relative;">
+        <span style="position:absolute;left:0;color:#60a5fa;">→</span>Add ginger or green tea to fight inflammation and support digestion
+      </li>
+      <li style="font-size:13px;color:#aaa;padding:3px 0 3px 18px;position:relative;">
+        <span style="position:absolute;left:0;color:#60a5fa;">→</span><a href="https://www.amazon.com/dp/B07B8BSGPL/?tag=contractionca-20" target="_blank" style="color:#60a5fa;">Probiotics</a> at night — reset gut bacteria
+      </li>
+      <li style="font-size:13px;color:#aaa;padding:3px 0 3px 18px;position:relative;">
+        <span style="position:absolute;left:0;color:#60a5fa;">→</span>Light exercise only: 20-min walk, yoga, stretching
+      </li>
+    </ul>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-badge" style="background:rgba(251,146,60,.2);color:#fb923c;">DAY 3</span>
+      <div><div class="day-name">Reset & Rebuild</div><div class="day-focus">Reintroduce + Replenish</div></div>
+    </div>
+    <ul style="list-style:none;padding:0;">
+      <li style="font-size:13px;color:#aaa;padding:3px 0 3px 18px;position:relative;">
+        <span style="position:absolute;left:0;color:#fb923c;">→</span>Sleep 7–9 hours — detox happens hardest during deep sleep
+      </li>
+      <li style="font-size:13px;color:#aaa;padding:3px 0 3px 18px;position:relative;">
+        <span style="position:absolute;left:0;color:#fb923c;">→</span>Reintroduce <a href="https://www.amazon.com/dp/B000QSNYGI/?tag=contractionca-20" target="_blank" style="color:#fb923c;">protein shakes</a> and your supplement stack
+      </li>
+      <li style="font-size:13px;color:#aaa;padding:3px 0 3px 18px;position:relative;">
+        <span style="position:absolute;left:0;color:#fb923c;">→</span><a href="https://www.amazon.com/dp/B09QBKGDLS/?tag=contractionca-20" target="_blank" style="color:#fb923c;">Multivitamin</a> + omega-3 to replenish micronutrients
+      </li>
+      <li style="font-size:13px;color:#aaa;padding:3px 0 3px 18px;position:relative;">
+        <span style="position:absolute;left:0;color:#fb923c;">→</span>Back to full training — you'll feel lighter, sharper, more focused
+      </li>
+    </ul>
+  </div>
+
+  <div class="section-label">🌿 SHOP DETOX PRODUCTS</div>
+  <a class="card" href="https://www.amazon.com/dp/B09XVQ5W8M/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-green">🍵</div>
+    <div class="card-body"><div class="card-title">Total Tea Slimming Detox</div><div class="card-sub">Women's #1 Detox Tea • Caffeine-free • ~$22</div></div>
+    <span class="card-tag t-green">Shop</span>
+  </a>
+  <a class="card" href="https://www.amazon.com/dp/B0CBCRL1KF/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-teal">🍑</div>
+    <div class="card-body"><div class="card-title">LULUTOX Detox Tea</div><div class="card-sub">Peach flavor • Ginseng + Ginger • ~$22</div></div>
+    <span class="card-tag t-teal">Shop</span>
+  </a>
+  <a class="card" href="https://www.amazon.com/dp/B0DSJYJ2G2/?tag=contractionca-20" target="_blank">
+    <div class="card-icon c-green">🌿</div>
+    <div class="card-body"><div class="card-title">Liver Cleanse 27-in-1</div><div class="card-sub">Milk Thistle + Turmeric + Dandelion • ~$22</div></div>
+    <span class="card-tag t-green">Shop</span>
+  </a>
+
+  <div class="divider"></div>
+  <a class="cta" href="https://www.amazon.com/s?k=best+supplements+for+muscle+building&tag=contractionca-20" target="_blank">🛒 Shop All Supplements on Amazon</a>
+</div>
+
+</div><!-- end container -->
+
+<div class="footer">
+  As an Amazon Associate I earn from qualifying purchases at no extra cost to you.<br>
+  All products are independently selected. Prices are approximate and may vary.
+</div>
+
+<script>
+  // Highlight active tab on scroll
+  const tabs = document.querySelectorAll('.tab');
+  const sections = ['women','men','schedule','timing','nutrition','detox'];
+  window.addEventListener('scroll', () => {
+    let current = 'women';
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && window.scrollY >= el.offsetTop - 120) current = id;
+    });
+    tabs.forEach(t => {
+      t.classList.toggle('active', t.getAttribute('href') === '#' + current);
+    });
+  });
+</script>
+
+</body>
+</html>
